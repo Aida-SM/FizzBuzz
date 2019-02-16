@@ -68,6 +68,18 @@ public class MainTest {
                  Assert.assertEquals("Fizz" , fizz.getNumber(givenNumber));
 
         }
+
+
+    }
+
+    @Test
+    public void ShouldReturnBuzzWhenNumbersBetweenZeroAndHundredAreMultipleOfFive() {
+        for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
+            if (givenNumber%5==0)
+                Assert.assertEquals("Buzz" , buzz.getNumber(givenNumber));
+
+        }
+
     }
 
 }
