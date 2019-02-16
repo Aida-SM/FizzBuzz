@@ -1,16 +1,26 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class MainTest {
 
+    private Number number;
+    private Fizz fizz;
+    private Buzz buzz;
+    private FizzBuzz fizzBuzz;
 
+    @Before
+    public void setUp() throws Exception {
+         number = new Number();
+        fizz = new Fizz();
+         buzz = new Buzz();
+        fizzBuzz = new FizzBuzz();
+    }
 
     @Test
     public void ShouldReturnNumberOneWhenItIsOne() {
-
-        Number number = new Number();
 
         String result = number.getNumber(1);
 
@@ -21,8 +31,6 @@ public class MainTest {
     @Test
     public void ShouldReturnNumberTwoWhenItIsTwo() {
 
-        Number number = new Number();
-
         String result = number.getNumber(2);
 
         Assert.assertEquals("2" , result);
@@ -32,8 +40,6 @@ public class MainTest {
     @Test
     public void ShouldReturnFizzWhenNumberIsThree() {
 
-        Fizz fizz = new Fizz();
-
         String result = fizz.getNumber(3);
 
         Assert.assertEquals("Fizz" , result);
@@ -41,7 +47,6 @@ public class MainTest {
 
     @Test
     public void ShouldReturnBuzzWhenNumberIsFive() {
-        Buzz buzz = new Buzz();
 
         String result = buzz.getNumber(5);
 
@@ -50,7 +55,6 @@ public class MainTest {
 
     @Test
     public void ShouldReturnBuzzWhenNumberIsFifteen() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         String result = fizzBuzz.getNumber(15);
 
@@ -59,10 +63,6 @@ public class MainTest {
 
     @Test
     public void ShouldFineCorrectClassForNumberBetween1To100() {
-        Number number = new Number();
-        Fizz fizz = new Fizz();
-        Buzz buzz = new Buzz();
-        FizzBuzz fizzBuzz = new FizzBuzz();
 
         for ( int i = 1; i<=100; i++){
 
