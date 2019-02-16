@@ -91,4 +91,11 @@ public class MainTest {
         }
 
     }
+
+    @Test
+    public void ShouldReturnFizzWhenNumberConsistOfThree() {
+        int givenNumber = 34;
+        if (givenNumber % 10 == 3 || givenNumber/10 == 3)
+            Assert.assertEquals("Fizz" , fizz.getNumber(givenNumber));
+    }
 }
