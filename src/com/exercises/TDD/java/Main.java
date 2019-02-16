@@ -5,5 +5,7 @@ public class Main {
     }
 
 
-
+    public String printOutput(int i) {
+        return null;
+    }
 }
