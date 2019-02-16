@@ -1,7 +1,7 @@
 public class Number implements NumberInterface {
 
-    public String getNumber(int Number){
+    public String getNumber(int NormalNumber){
 
-        return String.valueOf(Number) ;
+        return String.valueOf(NormalNumber) ;
     }
 }
