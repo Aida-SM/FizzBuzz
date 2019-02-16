@@ -93,9 +93,17 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldCkeckIfNumberConsistOfThree() {
+    public void ShouldCheckIfNumberConsistOfThreeAtRight() {
         int givenNumber = 43;
         Assert.assertEquals(3, givenNumber% 10);
-        Assert.assertEquals(3, givenNumber / 10);
+
     }
+
+    @Test
+    public void ShouldCheckIfNumberConsistOfThreeAtLeft() {
+        int givenNumber = 34;
+        Assert.assertEquals(3, givenNumber /  10);
+
+    }
+
 }
