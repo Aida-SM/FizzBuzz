@@ -10,7 +10,7 @@ public class MainTest {
     private Fizz fizz;
     private Buzz buzz;
     private FizzBuzz fizzBuzz;
-    private Main main;
+
 
     @Before
     public void setUp() throws Exception {
@@ -18,7 +18,6 @@ public class MainTest {
         fizz = new Fizz();
          buzz = new Buzz();
         fizzBuzz = new FizzBuzz();
-
     }
 
     @Test
@@ -68,16 +67,14 @@ public class MainTest {
 
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
             if (givenNumber%15==0)
-                Assert.assertEquals("FizzBuzz" , fizzBuzz.getNumber(givenNumber));
+                 Assert.assertEquals("FizzBuzz" , fizzBuzz.getNumber(givenNumber));
             else if (givenNumber%3==0)
                  Assert.assertEquals("Fizz" , fizz.getNumber(givenNumber));
             else if (givenNumber%5==0)
                 Assert.assertEquals("Buzz" , buzz.getNumber(givenNumber));
             else
                 Assert.assertEquals( String.valueOf(givenNumber) , number.getNumber(givenNumber));
-
         }
     }
-
 
 }
