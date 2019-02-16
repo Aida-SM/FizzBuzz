@@ -36,4 +36,15 @@ public class MainTest {
 
         Assert.assertEquals("Fizz" , result);
     }
+
+    @Test
+    public void ShouldReturnBuzzWhenNumberIsFive() {
+        Buzz buzz = new Buzz();
+
+        String result = buzz.getNumber(5);
+
+        Assert.assertEquals("Buzz" , result);
+    }
+
+
 }
