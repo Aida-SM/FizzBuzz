@@ -82,4 +82,13 @@ public class MainTest {
 
     }
 
+    @Test
+    public void ShouldReturnBuzzWhenNumbersBetweenZeroAndHundredAreMultipleOfFifteen() {
+
+        for (int givenNumber = 1; givenNumber <= 100; givenNumber++) {
+            if (givenNumber % 15 == 0)
+                Assert.assertEquals("FizzBuzz", fizzBuzz.getNumber(givenNumber));
+        }
+
+    }
 }
