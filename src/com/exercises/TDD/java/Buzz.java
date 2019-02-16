@@ -1,5 +1,5 @@
 public class Buzz implements NumberInterface {
-    public String getNumber(int i){
+    public String getNumber(int multipleOfFive){
 
         return "Buzz";
     }
