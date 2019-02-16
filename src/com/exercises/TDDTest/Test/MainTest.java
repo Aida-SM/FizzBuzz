@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,7 +12,7 @@ public class MainTest {
 
         String result = number.getNumber(1);
 
-        assertEquals("1" , result);
+        Assert.assertEquals("1" , result);
 
     }
 
@@ -22,7 +23,7 @@ public class MainTest {
 
         String result = number.getNumber(2);
 
-        assertEquals("2" , result);
+        Assert.assertEquals("2" , result);
 
     }
 
@@ -33,9 +34,6 @@ public class MainTest {
 
         String result = fizz.getNumber(3);
 
-        assertEquals("Fizz" , result);
-
-
-
+        Assert.assertEquals("Fizz" , result);
     }
 }
