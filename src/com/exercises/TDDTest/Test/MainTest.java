@@ -11,7 +11,6 @@ public class MainTest {
     private Buzz buzz;
     private FizzBuzz fizzBuzz;
 
-
     @Before
     public void setUp() throws Exception {
          number = new Number();
@@ -35,7 +34,6 @@ public class MainTest {
         String result = number.getNumber(2);
 
         Assert.assertEquals("2" , result);
-
     }
 
     @Test
@@ -63,17 +61,12 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldFineCorrectClassForNumberBetween1To100() {
+    public void ShouldReturnFizzWhenNumbersBetweenZeroAndHundredAreMultipleOfThree() {
 
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++){
-            if (givenNumber%15==0)
-                 Assert.assertEquals("FizzBuzz" , fizzBuzz.getNumber(givenNumber));
-            else if (givenNumber%3==0)
+            if (givenNumber%3==0)
                  Assert.assertEquals("Fizz" , fizz.getNumber(givenNumber));
-            else if (givenNumber%5==0)
-                Assert.assertEquals("Buzz" , buzz.getNumber(givenNumber));
-            else
-                Assert.assertEquals( String.valueOf(givenNumber) , number.getNumber(givenNumber));
+
         }
     }
 
