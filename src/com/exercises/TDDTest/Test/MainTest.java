@@ -103,7 +103,12 @@ public class MainTest {
     public void ShouldCheckIfNumberConsistOfThreeAtLeft() {
         int givenNumber = 34;
         Assert.assertEquals(3, givenNumber /  10);
-
     }
+    @Test
+    public void ShouldCheckIfNumberConsistOfFiveAtLeft() {
+        int givenNumber = 54;
+        Assert.assertEquals(5, givenNumber /  10);
+    }
+
 
 }
