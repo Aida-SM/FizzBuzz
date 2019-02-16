@@ -15,5 +15,14 @@ public class MainTest {
 
     }
 
+    @Test
+    public void ShouldReturnNumberTwoWhenItIsTwo() {
 
+        Number number = new Number();
+
+        String result = number.getNumber(2);
+
+        assertEquals("2" , result);
+
+    }
 }
