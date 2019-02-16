@@ -93,12 +93,9 @@ public class MainTest {
     }
 
     @Test
-    public void ShouldReturnFizzWhenNumberConsistOfThree() {
+    public void ShouldCkeckIfNumberConsistOfThree() {
         int givenNumber = 43;
-        if (givenNumber % 10 == 3 || givenNumber/10 == 3)
-            Assert.assertEquals("Fizz", fizz.getNumber(givenNumber));
-        else
-        System.out.println("not consist of three");
+        Assert.assertEquals(3, givenNumber% 10);
+        Assert.assertEquals(3, givenNumber / 10);
     }
-
 }
