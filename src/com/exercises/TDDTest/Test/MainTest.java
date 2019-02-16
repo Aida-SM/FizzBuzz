@@ -25,4 +25,17 @@ public class MainTest {
         assertEquals("2" , result);
 
     }
+
+    @Test
+    public void ShouldReturnFizzWhenNumberIsThree() {
+
+        Fizz fizz = new Fizz();
+
+        String result = fizz.getNumber(3);
+
+        assertEquals("Fizz" , result);
+
+
+
+    }
 }
