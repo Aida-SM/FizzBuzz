@@ -2,6 +2,6 @@ public class FizzBuzz implements NumberInterface {
 
     public String getNumber(int i){
 
-        return "i";
+        return "FizzBuzz";
     }
 }
