@@ -5,4 +5,9 @@ public class Main {
     }
 
 
+    public String getNumber(int i) {
+
+        return "1";
+
+    }
 }
