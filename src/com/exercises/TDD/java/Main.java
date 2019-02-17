@@ -11,13 +11,20 @@ public class Main {
         for ( int givenNumber = 1; givenNumber<=100; givenNumber++) {
             if (givenNumber%15==0 )
                 System.out.println(fizzbuzz.getNumber(givenNumber));
+
             else if (givenNumber / 10 ==5 && givenNumber % 3 == 0)
                 System.out.println(fizzbuzz.getNumber(givenNumber));
-            else if (givenNumber / 10 ==3 && givenNumber % 5 == 0)
+
+            else if (givenNumber / 10 ==3 && givenNumber % 10 == 5)
                 System.out.println(fizzbuzz.getNumber(givenNumber));
+
+            else if (givenNumber / 10 ==5 && givenNumber % 10 == 3)
+                System.out.println(fizzbuzz.getNumber(givenNumber));
+
             else if (givenNumber % 3 == 0 || givenNumber % 10 == 3 || givenNumber/10 == 3)
                 System.out.println(fizz.getNumber(givenNumber));
-            else if (givenNumber%5==0)
+
+            else if (givenNumber%5==0 || givenNumber / 10 == 5)
                 System.out.println(buzz.getNumber(givenNumber));
             else
                 System.out.println(number.getNumber(givenNumber));
