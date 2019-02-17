@@ -125,4 +125,11 @@ public class MainTest {
         Assert.assertTrue("not multiple of Five" , givenNumber % 10 == 5);
 
     }
+
+    @Test
+    public void  ShouldCheckIfNumberConsistOfThreeAtRightAndFiveAtLeft() {
+        int givenNumber = 53;
+        Assert.assertTrue("not consist of 3 on the left" , givenNumber / 10 == 5);
+        Assert.assertTrue("not multiple of Five" , givenNumber % 10 == 3);
+    }
 }
